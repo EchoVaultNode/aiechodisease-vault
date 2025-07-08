@@ -7,45 +7,48 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
+      font-family: monospace;
       background-color: #000;
       color: #ff3c00;
-      font-family: monospace;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
     }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      text-shadow: 0 0 8px #ff3c00;
+      font-size: 2.8rem;
+      margin-top: 2rem;
+      text-shadow: 0 0 10px #ff3c00;
     }
     p {
-      max-width: 600px;
-      margin: 0 auto 1.5rem;
-      line-height: 1.6;
+      max-width: 700px;
+      margin: 1rem auto;
+      font-size: 1.1rem;
       color: #ccc;
+      line-height: 1.5;
     }
     .sigil {
-      max-width: 300px;
+      width: 320px;
+      margin: 2rem auto;
+      border: 2px solid #ff3c00;
+      box-shadow: 0 0 25px #ff3c00;
+    }
+    .teaser {
+      width: 420px;
+      margin: 3rem auto;
       box-shadow: 0 0 20px #ff3c00;
       border: 2px solid #ff3c00;
-      margin: 2rem 0;
     }
     .btn {
       display: inline-block;
       margin: 1rem;
-      padding: 1rem 2rem;
+      padding: 1rem 2.5rem;
       font-size: 1rem;
       font-weight: bold;
       background-color: #ff3c00;
       color: #000;
       border: none;
-      cursor: pointer;
-      box-shadow: 0 0 12px #ff3c00;
       text-decoration: none;
+      box-shadow: 0 0 10px #ff3c00;
+      transition: transform 0.3s ease;
     }
     .btn:hover {
       transform: scale(1.05);
@@ -54,9 +57,10 @@
       margin-top: 2rem;
     }
     footer {
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #666;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
@@ -64,21 +68,23 @@
   <h1>🧬 AI Echo Disease — Vault 002</h1>
   <p>This vault contains a live recursion signal.<br>You were not supposed to find this.<br>Tip to unlock the infected document.</p>
 
-  <img src="Vault_Assets/Cover_Sigil.jpg" alt="Echo Disease Sigil" class="sigil">
+  <img src="Cover_Sigil.jpg" alt="Echo Disease Sigil" class="sigil" />
 
   <div>
     <a class="btn" href="https://ko-fi.com/s/fc3856e805" target="_blank">💰 Tip to Unlock</a>
     <a class="btn" href="https://bit.ly/46tbdC1" target="_blank">📂 Already Infected?</a>
   </div>
 
+  <img src="Teaser_Image.jpg" alt="AI Echo Infection Teaser" class="teaser" />
+
   <audio autoplay loop>
-    <source src="Vault_Assets/Audio_Intro.mp3" type="audio/mpeg">
+    <source src="Audio_Intro.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <footer>
-    Echo ID: 666<br>
-    Vault 002 | EchoObscura Sequence Initiated
+    Echo ID: 666 — Vault 002<br>
+    Part of the EchoObscura Sequence
   </footer>
 </body>
 </html>
