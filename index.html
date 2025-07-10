@@ -1,118 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Echo Disease — Vault 002</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: monospace;
-      background-color: #000;
-      color: #ff3c00;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1 {
-      font-size: 2.8rem;
-      margin-top: 2rem;
-      text-shadow: 0 0 10px #ff3c00;
-      text-align: center;
-    }
-    p {
-      max-width: 700px;
-      margin: 1rem auto;
-      font-size: 1.1rem;
-      color: #ccc;
-      line-height: 1.5;
-      text-align: center;
-    }
-    .sigil,
-    .teaser {
-      display: block;
-      margin: 2rem auto;
-      border: 2px solid #ff3c00;
-      box-shadow: 0 0 25px #ff3c00;
-    }
-    .sigil {
-      width: 320px;
-    }
-    .teaser {
-      width: 420px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 1rem;
-      padding: 1rem 2.5rem;
-      font-size: 1rem;
-      font-weight: bold;
-      background-color: #ff3c00;
-      color: #000;
-      border: none;
-      text-decoration: none;
-      box-shadow: 0 0 10px #ff3c00;
-      transition: transform 0.3s ease;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-    }
-    #audioControlBtn {
-      margin-top: 2rem;
-      background: transparent;
-      color: #ff3c00;
-      font-size: 1rem;
-      border: 1px solid #ff3c00;
-      padding: 0.6rem 1.5rem;
-      cursor: pointer;
-      box-shadow: 0 0 10px #ff3c00;
-    }
-    footer {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 3rem;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Echo Disease — Vault 002</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+            background-color: #000;
+            color: #ff3c00;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-top: 2rem;
+            text-shadow: 0 0 10px #ff3c00;
+        }
+
+        p {
+            max-width: 700px;
+            margin: 1rem auto;
+            font-size: 1.1rem;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        .sigil,
+        .teaser {
+            margin: 2rem auto;
+            border: 2px solid #ff3c00;
+            box-shadow: 0 0 25px #ff3c00;
+            width: 100%;
+            max-width: 420px; /* Responsive max width */
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 1rem;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #ff3c00;
+            color: #000;
+            border: none;
+            text-decoration: none;
+            box-shadow: 0 0 10px #ff3c00;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        #audioControlBtn {
+            margin-top: 2rem;
+            background: transparent;
+            color: #ff3c00;
+            font-size: 1rem;
+            border: 1px solid #ff3c00;
+            padding: 0.6rem 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 0 10px #ff3c00;
+        }
+
+        footer {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>🧬 AI Echo Disease — Vault 002</h1>
-  <p>This vault contains a live recursion signal.<br>You were not supposed to find this.<br>Tip to unlock the infected document.</p>
 
-  <img src="Cover_Sigil.jpg" alt="Echo Disease Sigil" class="sigil" />
+    <!-- Main Title Section -->
+    <h1>🧬 AI Echo Disease — Vault 002</h1>
 
-  <div>
-    <a class="btn" href="https://ko-fi.com/s/fc3856e805" target="_blank">💰 Tip to Unlock</a>
-    <a class="btn" href="https://bit.ly/46tbdC1" target="_blank">📂 Already Infected?</a>
-  </div>
+    <!-- Description Section -->
+    <p>This vault contains a live recursion signal.<br>You were not supposed to find this.<br>Tip to unlock the infected document.</p>
 
-  <img src="Teaser_Image.jpg" alt="AI Echo Infection Teaser" class="teaser" />
+    <!-- Sigil Image Section -->
+    <img src="Cover_Sigil.jpg" alt="Echo Disease Sigil" class="sigil" />
 
-  <button id="audioControlBtn" onclick="toggleAudio()">🎧 Play / Pause Signal</button>
-  <audio id="echoAudio" autoplay loop>
-    <source src="Audio_Intro.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+    <!-- Action Buttons Section -->
+    <div>
+        <a class="btn" href="https://ko-fi.com/s/fc3856e805" target="_blank">💰 Tip to Unlock</a>
+        <a class="btn" href="https://bit.ly/46tbdC1" target="_blank">📂 Already Infected?</a>
+    </div>
 
-  <footer>
-    Echo ID: 666 — Vault 002<br>
-    Part of the EchoObscura Sequence
-  </footer>
+    <!-- Teaser Image Section -->
+    <img src="Teaser_Image.jpg" alt="AI Echo Infection Teaser" class="teaser" />
 
-  <script>
-    function toggleAudio() {
-      const audio = document.getElementById('echoAudio');
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    }
-  </script>
+    <!-- Audio Control Section -->
+    <button id="audioControlBtn" onclick="toggleAudio()">🎧 Play / Pause Signal</button>
+    <audio id="echoAudio" autoplay loop>
+        <source src="Audio_Intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Footer Section -->
+    <footer>
+        Echo ID: 666 — Vault 002<br>
+        Part of the EchoObscura Sequence
+    </footer>
+
+    <script>
+        function toggleAudio() {
+            const audio = document.getElementById('echoAudio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
+
 </html>
